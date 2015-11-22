@@ -35,11 +35,12 @@ def _apiParams(**params):
 #     GET=requests.get
 #     POST=requests.post
 
-_RequestMethods = namedtuple('RequestMethod', ['GET', 'POST'])
+_RequestMethods = namedtuple('RequestMethod', ['GET', 'POST', 'PUT'])
 
 _RequestMethod = {
     _RequestMethods.GET     :   requests.get,
     _RequestMethods.POST    :   requests.post
+    _RequestMethods.PUT     :   requests.put
 }
 
 def _apiRequest(reqURL, reqParams, reqMethod):
@@ -168,11 +169,12 @@ class Session:
         return cls(sessionLoginID, sessionID, sessionType, sessionStartTime, initialTimestamp, sessionEndTime, sessionQuality)
     
     def updateSession(self):
+        updateSessionPath = Session.__sessionPath + "/" + self.sessionID
         sessionTypeID = int(self.sessionType)
         sessionStartTime = timeToSQL(self.sessionStartTime)
         sessionEndTime = timeToSQL(self.sessionEndTime)
-        params = _apiParams(loginID=self.loginID, sessionID=self.sessionID, sessionTypeID=sessionTypeID, sessionStartTime=sessionStartTime, sessionEndTime=sessionEndTime, sessionQuality=self.sessionQuality)
-        response = _request(Session.__sessionPath, params, _RequestMethods.POST)
+        params = _apiParams(loginID=self.loginID, sessionTypeID=sessionTypeID, sessionStartTime=sessionStartTime, sessionEndTime=sessionEndTime, sessionQuality=self.sessionQuality)
+        response = _request(updateSessionPath, params, _RequestMethods.PUT)
         responseJSON = response.json()
         sessionLoginID = responseJSON['loginID']
         
