@@ -24,9 +24,9 @@ def main(fileDataDir):
     
     os.chdir(fileDataDir)
     
-    lastModTime = os.path.getmtime('emg' + sessionPostfix + '.csv') # TODO Super kludge-y: gets last modified time of one of the files as the arbitrary session start
+    # lastModTime = os.path.getmtime('emg' + sessionPostfix + '.csv') # TODO Super kludge-y: gets last modified time of one of the files as the arbitrary session start
     dbOutput._session.initialTimestamp = int(timestamp)
-    dbOutput._session.sessionStartTime = datetime.datetime.fromtimestamp(lastModTime)
+    # dbOutput._session.sessionStartTime = datetime.datetime.fromtimestamp(lastModTime)
     
     for fileDataType, dataTypeName in MyoOutput._DataTypeName.iteritems():
         filePrefix = dataTypeName.lower()
