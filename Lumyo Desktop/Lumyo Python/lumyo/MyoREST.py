@@ -39,7 +39,7 @@ _RequestMethods = namedtuple('RequestMethod', ['GET', 'POST', 'PUT'])
 
 _RequestMethod = {
     _RequestMethods.GET     :   requests.get,
-    _RequestMethods.POST    :   requests.post
+    _RequestMethods.POST    :   requests.post,
     _RequestMethods.PUT     :   requests.put
 }
 
