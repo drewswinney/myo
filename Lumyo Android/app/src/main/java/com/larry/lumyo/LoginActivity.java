@@ -3,6 +3,7 @@ package com.larry.lumyo;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -49,6 +50,7 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class LoginActivity extends AppCompatActivity {
 
+    private int id;
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
      */
@@ -79,8 +81,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.username_sign_in_button);
-        mEmailSignInButton.setOnClickListener(new OnClickListener() {
+        Button mUsernameSignInButton = (Button) findViewById(R.id.username_sign_in_button);
+        mUsernameSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 attemptLogin();
@@ -210,12 +212,14 @@ public class LoginActivity extends AppCompatActivity {
             try {
                 Log.d("JSONParse", "I'm trying");
                 //http://stackoverflow.com/questions/6511880/how-to-parse-a-json-input-stream
+                //Building the JSON Array
                 BufferedReader streamReader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
                 StringBuilder responseStrBuilder = new StringBuilder();
                 String inputStr;
                 while ((inputStr = streamReader.readLine()) != null)
                     responseStrBuilder.append(inputStr);
                 JSONArray array = new JSONArray(responseStrBuilder.toString());
+                //Parsing the JSON Array
                 for (int i = 0; i < array.length(); i++) {
                     JSONObject row = array.getJSONObject(i);
                     loginUsername = row.getString("loginUsername");
@@ -224,6 +228,8 @@ public class LoginActivity extends AppCompatActivity {
                     Log.d("JSONParse", loginPassword);
                     if (mUsername.equals(loginUsername) && mPassword.equals(loginPassword)) {
                         Log.d("JSONParse", "Wow this actually worked");
+                        id = Integer.parseInt(row.getString("id"));
+                        Log.d("JSONParse", Integer.toString(id));
                         return true;
                     }
                 }
@@ -240,7 +246,8 @@ public class LoginActivity extends AppCompatActivity {
             showProgress(false);
 
             if (success) {
-                finish();
+                Intent dataTransfer = new Intent(getApplicationContext(), dataTransferActivity.class);
+                startActivity(dataTransfer);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
