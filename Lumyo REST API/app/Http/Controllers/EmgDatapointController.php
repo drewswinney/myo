@@ -44,7 +44,7 @@ class EmgDatapointController extends Controller
     public function getEmgDatapointsBySessionId($id)
     {
         //DB::raw();
-        $EmgDataPoints = EmgDataPoint::where('sessionID', $id)->where('emgpDeleted', 0)->whereRaw('id % 10 = 0')->get();
+        $EmgDataPoints = EmgDataPoint::where('sessionID', $id)->where('emgpDeleted', 0)->whereRaw('id % 10 = 0')->orderBy('emgpDateTime', 'asc')->get();
         return response()->json($EmgDataPoints);
     }
   

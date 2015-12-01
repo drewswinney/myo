@@ -42,7 +42,7 @@ class OrientationDatapointController extends Controller
 
     public function getOrientationDatapointsBySessionId($id)
     {
-        $OrientationDatapoints = OrientationDataPoint::where('sessionID', $id)->where('odpDeleted', 0)->whereRaw('id % 10 = 0')->get();
+        $OrientationDatapoints = OrientationDataPoint::where('sessionID', $id)->where('odpDeleted', 0)->whereRaw('id % 10 = 0')->orderBy('odpDateTime', 'asc')->get();
         return response()->json($OrientationDatapoints);
     }
   

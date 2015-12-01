@@ -42,7 +42,7 @@ class AccelerationDatapointController extends Controller
 
     public function getAccelerationDatapointsBySessionId($id)
     {
-        $AccelerationDatapoints = AccelerationDataPoint::where('sessionID', $id)->where('adpDeleted', 0)->whereRaw('id % 10 = 0')->get();
+        $AccelerationDatapoints = AccelerationDataPoint::where('sessionID', $id)->where('adpDeleted', 0)->whereRaw('id % 10 = 0')->orderBy('adpDateTime', 'asc')->get();
         return response()->json($AccelerationDatapoints);
     }
   

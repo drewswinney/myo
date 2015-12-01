@@ -42,7 +42,7 @@ class RotationDatapointController extends Controller
 
     public function getRotationDatapointsBySessionId($id)
     {
-        $RotationDatapoints = RotationDataPoint::where('sessionID', $id)->where('rdpDeleted', 0)->whereRaw('id % 10 = 0')->get();
+        $RotationDatapoints = RotationDataPoint::where('sessionID', $id)->where('rdpDeleted', 0)->whereRaw('id % 10 = 0')->orderBy('rdpDateTime', 'asc')->get();
         return response()->json($RotationDatapoints);
     }
   
