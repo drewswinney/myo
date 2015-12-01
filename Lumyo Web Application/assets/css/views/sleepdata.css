@@ -1,0 +1,142 @@
+.title
+{
+	color:#ff0000;
+}
+
+.calendarRow
+{
+	text-align:center;
+}
+
+.calendarRow li
+{
+	display: inline-block;
+	height:100px;
+	width:100px;
+	text-align: center
+}
+
+.calendarHeaderRow
+{
+	padding-top:5px;
+	text-align:center;
+}
+
+.calendarHeaderRow li
+{
+	display: inline-block;
+	width:100px;
+}
+
+.calendarDayHeader
+{
+	display: inline; 
+	color:#ffffff;
+	width:100px;
+	list-style-type: none;
+}
+
+.calendarDay
+{
+	position: relative;
+	display: inline; 
+	list-style-type: none;
+    font-size:18px;
+	float:left;
+	left:10px;
+	top:10px;
+	height:80px;
+	width:80px;
+	text-align: center;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.calendarDay > p
+{
+    position:relative;
+    top:25px;
+    color:white;
+}
+
+.calendarDay:hover
+{
+	position:relative;
+	height:100px;
+	width:100px;
+	left:0px;
+	top:0px;
+    font-size:35px;
+}
+
+.emptyDay
+{
+	position:relative;
+	display: inline; 
+	list-style-type: none;
+	float:left;
+	background:transparent; 
+	height:100px;
+	width:100px;
+}
+
+#listview
+{
+	text-align: center;
+}
+
+.list
+{
+	text-align: center;
+	width:800px;
+}
+
+.listitem
+{
+	position:relative;
+}
+
+.listitem:hover
+{
+	background:#fffeee;
+}
+
+.axis path 
+{
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.legend 
+{
+    font-size: 16px;
+}
+
+.modal-dialog
+{
+	width: 1100px;
+    height: auto; 
+    max-height: 100%;
+}
+
+.modal-header 
+{
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #008b2b;
+    color:white;
+}
+
+.modal-footer
+{
+    background-color: #F8F5E1;
+}
+
+#visualization
+{
+	width: 1000px;
+	height: 500px;
+}
