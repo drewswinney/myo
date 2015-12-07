@@ -16,9 +16,15 @@ NOTE: In most of the code the API calls are directed towards drewswinney.com:808
 
 ## Iphone and Android Applications 
 
-  To install the Iphone application, first install XCode, which can be found here: https://developer.apple.com/xcode/. Load the iOS project into XCode and compile. Upload to your device and pair with the Myo device to use. (Note: The device must have bluetooth capabilities.)
+  Installing the Iphone application
+  1. First install XCode on your computer, which can be found here: https://developer.apple.com/xcode/.
+  2. Load the iOS project into XCode and compile.
+  3. Upload to your device and pair with the Myo device to use. (Note: The device must have bluetooth capabilities.)
 
-  To install the Android application, first install Android Studio, which can be found here: http://developer.android.com/sdk/index.html. Note you must also have JDK 7 installed. Load the Android project into Android Studio and compile. Upload to your device and pair with the Myo device to use. (Note: The device must have bluetooth capabilities.)
+  Installing the Android application
+  1. First install Android Studio on your computer, which can be found here: http://developer.android.com/sdk/index.html. If your computer does not have JDK 7 or higher installed, install it here: http://www.oracle.com/technetwork/java/javase/downloads/index.html.
+  2. Load the Android project into Android Studio and compile.
+  3. Upload to your device and pair with the Myo device to use. (Note: The device must have bluetooth capabilities.)
 
 (NOTE: The Android App is only a baseline. It has no actual code linking to the Myo. This is due to the lack of direct access to Raw EMG data in the Android API provided by Thalmic Labs.
 
