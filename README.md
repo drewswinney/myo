@@ -31,6 +31,10 @@ To install Lumyo Desktop, one can either install the dependencies listed in the 
 # Known Bugs
 ### Web Application
   - Randomly, a day will not show it's quality (have a color) in the calendar view
+### Android Application
+  - Android application is unable to connect with the Myo device
+### iOS Application
+  - Lag in iOS app due to multiple asynchronous calls to the server each second
 
 #How to Use
 1. Install all of the applications
