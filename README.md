@@ -26,7 +26,8 @@ NOTE: In most of the code the API calls are directed towards drewswinney.com:808
 - iOS Application: Stable
 
 # Known Bugs
-
+### Web Application
+  - Randomly, a day will not show it's quality (have a color) in the calendar view
 
 #How to Use
 1. Install all of the applications
