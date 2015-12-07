@@ -20,7 +20,7 @@ NOTE: In most of the code the API calls are directed towards drewswinney.com:808
 
 (NOTE: The Android App is only a baseline. It has no actual code linking to the Myo. This is due to the lack of direct access to Raw EMG data in the Android API provided by Thalmic Labs.
 
-# Current Status
+# Current Status (version 1.0.0)
 - Web Application: Stable
 - Android Application: Alpha
-- iOS Application: Beta
+- iOS Application: Stable
