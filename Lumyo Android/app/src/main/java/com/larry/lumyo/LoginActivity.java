@@ -48,7 +48,7 @@ import static android.Manifest.permission.READ_CONTACTS;
 /**
  * A login screen that offers login via username/password.
  */
-public class LoginActivity extends AppCompatActivity {
+public class loginActivity extends AppCompatActivity {
 
     private int id;
     /**
@@ -192,7 +192,11 @@ public class LoginActivity extends AppCompatActivity {
             mPassword = password;
         }
 
-        @Override
+        /**
+         * Attempts to connect to the REST API and get login data. If user provides
+         * valid login credentials, return true. Otherwise, return false.
+         */
+         @Override
         protected Boolean doInBackground(Void... params) {
             Log.d("InputStream", "I'm trying");
             String urlString = "http://drewswinney.com:8080/api/login";
@@ -240,6 +244,10 @@ public class LoginActivity extends AppCompatActivity {
             return false;
         }
 
+        /**
+         * If the login credentials are valid, send the user to the data transfer screen.
+         * Otherwise, an error notification appears.
+         */
         @Override
         protected void onPostExecute(final Boolean success) {
             mAuthTask = null;
@@ -254,6 +262,9 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
 
+        /**
+         * If the user cancels the login, stop the login task.
+         */
         @Override
         protected void onCancelled() {
             mAuthTask = null;
