@@ -16,7 +16,9 @@ NOTE: In most of the code the API calls are directed towards drewswinney.com:808
 
 ## Iphone and Android Applications 
 
-  To install the Iphone application load the iOS project into XCode and compile. Upload to your device and pair with the Myo device to use. (Note: The device must have bluetooth capabilities)
+  To install the Iphone application, first install XCode, which can be found here: https://developer.apple.com/xcode/. Load the iOS project into XCode and compile. Upload to your device and pair with the Myo device to use. (Note: The device must have bluetooth capabilities.)
+
+  To install the Android application, first install Android Studio, which can be found here: http://developer.android.com/sdk/index.html. Note you must also have JDK 7 installed. Load the Android project into Android Studio and compile. Upload to your device and pair with the Myo device to use. (Note: The device must have bluetooth capabilities.)
 
 (NOTE: The Android App is only a baseline. It has no actual code linking to the Myo. This is due to the lack of direct access to Raw EMG data in the Android API provided by Thalmic Labs.
 
@@ -45,3 +47,10 @@ To install Lumyo Desktop, one can either install the dependencies listed in the 
 4. For the Mobile App: Click the Start button and begin your session
 5. For the Desktop App: Launch script RunLumyo.sh, keeping in mind that the automatic behavior outputs to a log file. If you want to output directly to the database you must change the logging parameters in the config file MyoConfig.ini.
 6. After running a session you will see it in the sessions view on the web application. Click on the day the session ran to view the session data (or data for multiple sessions if you have ran more than one)
+
+#Troubleshooting
+My phone can't run the iOS/Android app!
+The iOS can only be run on 7.1 or newer phones. The Android app can only run on Android 4.3 or newer phones.
+
+My phone can't connect to the Myo!
+Make sure the Myo is turned on. Be sure your app is on the "Scanning" screen, which can be accessed by pressing the "Start" button after logging in. Check if you phone is can detect bluetooth devices. If not, enable it or find a different device that can.
