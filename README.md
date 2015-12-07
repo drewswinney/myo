@@ -29,3 +29,8 @@ NOTE: In most of the code the API calls are directed towards drewswinney.com:808
 
 
 #How to Use
+1. Install all of the applications
+2. Run either the desktop app or mobile application and log in (make sure you have a login row with your information in the database)
+3. Open up your instance of the web application and log in
+4. For the Mobile App: Click the Start button and begin your session
+5. For the Desktop App: Launch script RunLumyo.sh, keeping in mind that the automatic behavior outputs to a log file. If you want to output directly to the database you must change the config file in LumyoPython\MyoConfig.ini.
