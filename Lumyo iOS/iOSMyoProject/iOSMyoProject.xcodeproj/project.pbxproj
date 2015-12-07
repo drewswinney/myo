@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1A05C9D1C16101E00D3D5BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A05C9C1C16101E00D3D5BD /* main.m */; };
+		F1A05CA31C16101E00D3D5BD /* iOSMyoProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A05CA11C16101E00D3D5BD /* iOSMyoProject.xcdatamodeld */; };
+		F1A05CAB1C16101E00D3D5BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A05CAA1C16101E00D3D5BD /* Images.xcassets */; };
+		F1A05CAE1C16101E00D3D5BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A05CAC1C16101E00D3D5BD /* LaunchScreen.xib */; };
+		F1A05CBA1C16101E00D3D5BD /* iOSMyoProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A05CB91C16101E00D3D5BD /* iOSMyoProjectTests.m */; };
+		F1A05CC71C16104200D3D5BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A05CC41C16104200D3D5BD /* AppDelegate.m */; };
+		F1A05CC81C16104200D3D5BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A05CC61C16104200D3D5BD /* ViewController.m */; };
+		F1A05CCB1C16106900D3D5BD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A05CC91C16106900D3D5BD /* ViewController.xib */; };
+		F1A05CCD1C1610AA00D3D5BD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A05CCC1C1610AA00D3D5BD /* CoreBluetooth.framework */; };
+		F1A05CCF1C1610B300D3D5BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A05CCE1C1610B300D3D5BD /* UIKit.framework */; };
+		F1A05CD11C1610CE00D3D5BD /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A05CD01C1610CE00D3D5BD /* MyoKit.framework */; };
+		F1A05CD31C1610EC00D3D5BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A05CD21C1610EC00D3D5BD /* CoreGraphics.framework */; };
+		F1A05CD51C1610F300D3D5BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A05CD41C1610F300D3D5BD /* Foundation.framework */; };
+		F1A05CD71C16110400D3D5BD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A05CD61C16110400D3D5BD /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1A05CB41C16101E00D3D5BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A05C8F1C16101E00D3D5BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A05C961C16101E00D3D5BD;
+			remoteInfo = iOSMyoProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1A05C971C16101E00D3D5BD /* iOSMyoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMyoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A05C9B1C16101E00D3D5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A05C9C1C16101E00D3D5BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1A05CA21C16101E00D3D5BD /* iOSMyoProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSMyoProject.xcdatamodel; sourceTree = "<group>"; };
+		F1A05CAA1C16101E00D3D5BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F1A05CAD1C16101E00D3D5BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F1A05CB31C16101E00D3D5BD /* iOSMyoProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMyoProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A05CB81C16101E00D3D5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A05CB91C16101E00D3D5BD /* iOSMyoProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMyoProjectTests.m; sourceTree = "<group>"; };
+		F1A05CC31C16104200D3D5BD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../KivaJSONDemo/KivaJSONDemo/AppDelegate.h; sourceTree = "<group>"; };
+		F1A05CC41C16104200D3D5BD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../KivaJSONDemo/KivaJSONDemo/AppDelegate.m; sourceTree = "<group>"; };
+		F1A05CC51C16104200D3D5BD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../KivaJSONDemo/KivaJSONDemo/ViewController.h; sourceTree = "<group>"; };
+		F1A05CC61C16104200D3D5BD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../KivaJSONDemo/KivaJSONDemo/ViewController.m; sourceTree = "<group>"; };
+		F1A05CCA1C16106900D3D5BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../KivaJSONDemo/KivaJSONDemo/en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F1A05CCC1C1610AA00D3D5BD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F1A05CCE1C1610B300D3D5BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1A05CD01C1610CE00D3D5BD /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyoKit.framework; path = "../../Downloads/LUMYO/Myo-iOS-SDK-0.5.2/MyoKit.framework"; sourceTree = "<group>"; };
+		F1A05CD21C1610EC00D3D5BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1A05CD41C1610F300D3D5BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1A05CD61C16110400D3D5BD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A05C941C16101E00D3D5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A05CD71C16110400D3D5BD /* SystemConfiguration.framework in Frameworks */,
+				F1A05CD51C1610F300D3D5BD /* Foundation.framework in Frameworks */,
+				F1A05CD31C1610EC00D3D5BD /* CoreGraphics.framework in Frameworks */,
+				F1A05CD11C1610CE00D3D5BD /* MyoKit.framework in Frameworks */,
+				F1A05CCF1C1610B300D3D5BD /* UIKit.framework in Frameworks */,
+				F1A05CCD1C1610AA00D3D5BD /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A05CB01C16101E00D3D5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1A05C8E1C16101E00D3D5BD = {
+			isa = PBXGroup;
+			children = (
+				F1A05CD61C16110400D3D5BD /* SystemConfiguration.framework */,
+				F1A05CD41C1610F300D3D5BD /* Foundation.framework */,
+				F1A05CD21C1610EC00D3D5BD /* CoreGraphics.framework */,
+				F1A05CD01C1610CE00D3D5BD /* MyoKit.framework */,
+				F1A05CCE1C1610B300D3D5BD /* UIKit.framework */,
+				F1A05CCC1C1610AA00D3D5BD /* CoreBluetooth.framework */,
+				F1A05C991C16101E00D3D5BD /* iOSMyoProject */,
+				F1A05CB61C16101E00D3D5BD /* iOSMyoProjectTests */,
+				F1A05C981C16101E00D3D5BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A05C981C16101E00D3D5BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A05C971C16101E00D3D5BD /* iOSMyoProject.app */,
+				F1A05CB31C16101E00D3D5BD /* iOSMyoProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A05C991C16101E00D3D5BD /* iOSMyoProject */ = {
+			isa = PBXGroup;
+			children = (
+				F1A05CC91C16106900D3D5BD /* ViewController.xib */,
+				F1A05CC31C16104200D3D5BD /* AppDelegate.h */,
+				F1A05CC41C16104200D3D5BD /* AppDelegate.m */,
+				F1A05CC51C16104200D3D5BD /* ViewController.h */,
+				F1A05CC61C16104200D3D5BD /* ViewController.m */,
+				F1A05CAA1C16101E00D3D5BD /* Images.xcassets */,
+				F1A05CAC1C16101E00D3D5BD /* LaunchScreen.xib */,
+				F1A05CA11C16101E00D3D5BD /* iOSMyoProject.xcdatamodeld */,
+				F1A05C9A1C16101E00D3D5BD /* Supporting Files */,
+			);
+			path = iOSMyoProject;
+			sourceTree = "<group>";
+		};
+		F1A05C9A1C16101E00D3D5BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1A05C9B1C16101E00D3D5BD /* Info.plist */,
+				F1A05C9C1C16101E00D3D5BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1A05CB61C16101E00D3D5BD /* iOSMyoProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A05CB91C16101E00D3D5BD /* iOSMyoProjectTests.m */,
+				F1A05CB71C16101E00D3D5BD /* Supporting Files */,
+			);
+			path = iOSMyoProjectTests;
+			sourceTree = "<group>";
+		};
+		F1A05CB71C16101E00D3D5BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1A05CB81C16101E00D3D5BD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A05C961C16101E00D3D5BD /* iOSMyoProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A05CBD1C16101E00D3D5BD /* Build configuration list for PBXNativeTarget "iOSMyoProject" */;
+			buildPhases = (
+				F1A05C931C16101E00D3D5BD /* Sources */,
+				F1A05C941C16101E00D3D5BD /* Frameworks */,
+				F1A05C951C16101E00D3D5BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSMyoProject;
+			productName = iOSMyoProject;
+			productReference = F1A05C971C16101E00D3D5BD /* iOSMyoProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A05CB21C16101E00D3D5BD /* iOSMyoProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A05CC01C16101E00D3D5BD /* Build configuration list for PBXNativeTarget "iOSMyoProjectTests" */;
+			buildPhases = (
+				F1A05CAF1C16101E00D3D5BD /* Sources */,
+				F1A05CB01C16101E00D3D5BD /* Frameworks */,
+				F1A05CB11C16101E00D3D5BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A05CB51C16101E00D3D5BD /* PBXTargetDependency */,
+			);
+			name = iOSMyoProjectTests;
+			productName = iOSMyoProjectTests;
+			productReference = F1A05CB31C16101E00D3D5BD /* iOSMyoProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A05C8F1C16101E00D3D5BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Annaleese Russell";
+				TargetAttributes = {
+					F1A05C961C16101E00D3D5BD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F1A05CB21C16101E00D3D5BD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F1A05C961C16101E00D3D5BD;
+					};
+				};
+			};
+			buildConfigurationList = F1A05C921C16101E00D3D5BD /* Build configuration list for PBXProject "iOSMyoProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A05C8E1C16101E00D3D5BD;
+			productRefGroup = F1A05C981C16101E00D3D5BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1A05C961C16101E00D3D5BD /* iOSMyoProject */,
+				F1A05CB21C16101E00D3D5BD /* iOSMyoProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A05C951C16101E00D3D5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A05CAE1C16101E00D3D5BD /* LaunchScreen.xib in Resources */,
+				F1A05CCB1C16106900D3D5BD /* ViewController.xib in Resources */,
+				F1A05CAB1C16101E00D3D5BD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A05CB11C16101E00D3D5BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A05C931C16101E00D3D5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A05CC81C16104200D3D5BD /* ViewController.m in Sources */,
+				F1A05CA31C16101E00D3D5BD /* iOSMyoProject.xcdatamodeld in Sources */,
+				F1A05C9D1C16101E00D3D5BD /* main.m in Sources */,
+				F1A05CC71C16104200D3D5BD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A05CAF1C16101E00D3D5BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A05CBA1C16101E00D3D5BD /* iOSMyoProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1A05CB51C16101E00D3D5BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A05C961C16101E00D3D5BD /* iOSMyoProject */;
+			targetProxy = F1A05CB41C16101E00D3D5BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1A05CAC1C16101E00D3D5BD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A05CAD1C16101E00D3D5BD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F1A05CC91C16106900D3D5BD /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A05CCA1C16106900D3D5BD /* en */,
+			);
+			name = ViewController.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1A05CBB1C16101E00D3D5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1A05CBC1C16101E00D3D5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A05CBE1C16101E00D3D5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/annarussell/Downloads/LUMYO/Myo-iOS-SDK-0.5.2",
+				);
+				INFOPLIST_FILE = iOSMyoProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1A05CBF1C16101E00D3D5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/annarussell/Downloads/LUMYO/Myo-iOS-SDK-0.5.2",
+				);
+				INFOPLIST_FILE = iOSMyoProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1A05CC11C16101E00D3D5BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSMyoProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMyoProject.app/iOSMyoProject";
+			};
+			name = Debug;
+		};
+		F1A05CC21C16101E00D3D5BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSMyoProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSMyoProject.app/iOSMyoProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A05C921C16101E00D3D5BD /* Build configuration list for PBXProject "iOSMyoProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A05CBB1C16101E00D3D5BD /* Debug */,
+				F1A05CBC1C16101E00D3D5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A05CBD1C16101E00D3D5BD /* Build configuration list for PBXNativeTarget "iOSMyoProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A05CBE1C16101E00D3D5BD /* Debug */,
+				F1A05CBF1C16101E00D3D5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1A05CC01C16101E00D3D5BD /* Build configuration list for PBXNativeTarget "iOSMyoProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A05CC11C16101E00D3D5BD /* Debug */,
+				F1A05CC21C16101E00D3D5BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1A05CA11C16101E00D3D5BD /* iOSMyoProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1A05CA21C16101E00D3D5BD /* iOSMyoProject.xcdatamodel */,
+			);
+			currentVersion = F1A05CA21C16101E00D3D5BD /* iOSMyoProject.xcdatamodel */;
+			path = iOSMyoProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1A05C8F1C16101E00D3D5BD /* Project object */;
+}
