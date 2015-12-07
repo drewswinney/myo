@@ -24,3 +24,5 @@ NOTE: In most of the code the API calls are directed towards drewswinney.com:808
 - Web Application: Stable
 - Android Application: Alpha
 - iOS Application: Stable
+
+#How to Use
